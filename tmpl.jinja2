@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JBLY</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-2mX2PSpkRSXLQzmNzH3gwK6srb06+OfbDlYjbog8LQuALYJjuQ3+Yzy2JIWNV9rW" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+<a class="navbar-brand">JBLY</a>
+</nav>
+<table class="table">
+<thead>
+<tr><th>Company</th><th>Title</th><th>Location</th></tr>
+</thead>
+<tbody>
+{% for job in jobs %}
+<tr><td>{{ job.company }}</td><td>{{ job.title }}</td><td>{{ job.location }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
