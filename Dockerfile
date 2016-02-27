@@ -1,10 +1,12 @@
 FROM ubuntu:15.10
 
+RUN apt-get update && apt-get install -y python-virtualenv
+
 COPY . /opt/python-jobboard
 
 WORKDIR /opt/python-jobboard
 
-RUN virtualenv /opt/v -p python3.5
+RUN virtualenv -p python3.5 /opt/v
 
 RUN /opt/v/bin/pip install -r requirements.txt
 
