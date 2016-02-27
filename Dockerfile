@@ -2,6 +2,8 @@ FROM ubuntu:15.10
 
 RUN apt-get update && apt-get install -y python-virtualenv
 
+RUN apt-get install -y python3.5
+
 COPY . /opt/python-jobboard
 
 WORKDIR /opt/python-jobboard
