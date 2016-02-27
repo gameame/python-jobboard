@@ -1,6 +1,6 @@
 FROM ubuntu:15.10
 
-RUN apt-cache update && apt-get install -y python3.5
+RUN apt-get update && apt-get install -y python3.5
 
 COPY . /opt/python-jobboard
 
